@@ -1,4 +1,4 @@
-# Serilog.Sinks.Syslog
+# Serilog.Sinks.ILogger
 
 [![NuGet Version](http://img.shields.io/nuget/v/Serilog.Sinks.ILogger.svg?style=flat)](https://www.nuget.org/packages/Serilog.Sinks.ILogger/)
 
