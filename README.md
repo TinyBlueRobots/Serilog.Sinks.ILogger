@@ -25,3 +25,5 @@ var log = new LoggerConfiguration()
 ### Optional parameters
 
 **outputTemplate** A message template describing the output messages. See https://github.com/serilog/serilog/wiki/Formatting-Output.
+
+**restrictedToMinimumLevel** The minimum level for events passed through the sink.
