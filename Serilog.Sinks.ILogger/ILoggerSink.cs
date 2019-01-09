@@ -27,12 +27,12 @@ namespace Serilog.Sinks.ILogger
         {
           formatter.Format(logEvent, stringWriter);
           var message = stringWriter.ToString();
-          logger.Log(logLevel, message);
+          logger.Log(logLevel, message, logEvent.Exception, logEvent.Properties);
         }
       }
       else
       {
-        logger.Log(logLevel, logEvent.RenderMessage());
+        logger.Log(logLevel, logEvent.RenderMessage(), logEvent.Exception, logEvent.Properties);
       }
     }
   }
